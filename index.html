@@ -12,6 +12,82 @@
         <li><a href="ftp://tavalik.ru/Temp/file.txt"> ссылку на файл на сервере FTP без авторизации</a></li>
         <li><a href="ftp://user:pass123@tavalik.ru/Temp/file.txt"> ссылку на файл на сервере FTP c авторизацией</a></li>
         <li><a href="https://test.html#bottom">Ссылка на часть страницы(якорь)</a></li>
+        <li><a href="#top">Ссылка на начало страницы</a></li>
+        <li><a href="https://github.com/?branch=master&repo=chat">Ссылка с двумя параметрами в URL</a></li>
+        <li><a href="#anchor">Начало страницы</a><a href="#">Главная</a></li>
+	    <li><a>Ссылка без href</a></li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a href="https://test.com" rel="nofollow">Ссылка nofollow</a></li>
+	    <li><a href="https://test.com" rel="noindex">Ссылка noindex</a></li>
+        <li><h1>Пример абзаца для контекстной ссылки</h1>
+        <p>
+	          <a href="https://www.lipsum.com/feed/html">Бинанс</a> - это централизованная биржа. Как и в большинстве бирж, в бинансе есть своя валюта - BNB, при наличии которой у вас на спо товом аккаунте, вся коммисия при транзакциях будет взыматься именно в этой валюте, так ещё и с 25% скидкой.
+	        </p>
+	   </li>
+       <li><a href="https://avatars.mds.yandex.net/i?id=da0f054ca5ac170fb4aea09c8387e329-5221285-images-thumbs&n=13"><img src="https://yandex.ru/images/search?pos=3&from=tabbar&img_url=http%3A%2F%2Fmediasole.ru%2Fdata%2Favatar%2F49%2F49068%2F%25D0%259A%25D0%259E%25D0%25A2%25D0%2598%25D0%25A9%25D0%2595.jpeg&text=изображение&rpt=simage&lr=35" width="500" height="500"></a></li><li>
+	   <li><a href="demo.html">Относительная ссылка на файл в том же каталоге</a></li>
+	   <li><a href="about/contacts.html">Относительная ссылка на файл в каталоге about</a></li>
+	   <li><a href="./Веб-разработка(черновик).pdf">Относительная ссылка на файл в каталоге, выше нынешнего на один</a></li>
+	   <li><a href="././random.html">Относительная ссылка на файл двумя каталогами выше</a></li>
+	   <li><a href="/">Сокращенная ссылка на главную</a></li>
+	   <li><a href="/form.html">Сокращенная на внутреннюю</a></li>     
       </ol>
+        
+      <form action="/" method="POST">
+
+	    <label>
+	        Введите имя<br>
+	        <input name="field-name-1" value="Malder">
+	    </label><br>
+
+	    <label>
+	        Введите email:<br>
+	        <input name="field-email" value="test@example.com" type="email">
+	    </label><br>
+
+	    <label>
+	        Введите дату рождения<br>
+	        <input name="field-date" value="2021-09-08" type="date">
+	    </label><br>
+
+	    Введите пол:<br>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+	        Мужской</label><br>
+	    <label><input type="radio" name="radio-group-1" value="Значение2">
+	        Женский</label><br>
+
+	    Выберите кол-во конечностей:<br>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+	        1</label>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение2">
+	        2</label>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение3">
+	        3</label>
+	    <label><input type="radio" name="radio-group-1" value="Значение4">
+	        4</label>
+	    <label><input type="radio" name="radio-group-1" value="Значениие 5">
+	        Больше 4х</label><br>
+
+	    <label>
+	        Сверхспособности:
+	        <br>
+	        <select name="field-name-4[]" multiple="multiple">
+	            <option value="Значение1">Бессмертие</option>
+	            <option value="Значение2" selected="selected">Левитация</option>
+	            <option value="Значение3" selected="selected">Прохождение сквозь стены</option>
+	        </select>
+	    </label><br>
+
+	    <label>
+	        Биография:
+	        <br>
+	        <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Напишите что-то о себе</textarea>
+	    </label><br>
+
+	    <label><input type="checkbox" checked="checked" name="check-1">
+	        с контрактом ознакомлен (а)</label><br>
+
+	    <input type="submit" value="Отправить">
+	</form>
     </body>
 </html>
